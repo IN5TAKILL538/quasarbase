@@ -1,7 +1,7 @@
 <template>
     <div>
         <h1>
-            habitaciones aqui
+            servicios aqui
         </h1>
     </div>
 </template>
