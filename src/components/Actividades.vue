@@ -1,5 +1,6 @@
 <template>
-    <div>
+    <div class="contenedor_actividades">
+        
         
     </div>
 </template>
