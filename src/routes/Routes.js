@@ -4,7 +4,7 @@ import Actividades from "../components/Actividades.vue"
 import Contacto from "../components/Contacto.vue"
 import Habitaciones from "../components/Habitaciones.vue"
 import Inicio from "../components/Inicio.vue"
-import Servicios from "..coponents/Servicios.vue"
+import Servicios from "../components/Servicios.vue"
 
 
 const routes = [
