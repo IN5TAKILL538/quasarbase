@@ -316,10 +316,10 @@
       thumbnails
       infinite
     >
-      <q-carousel-slide :name="1" img-src="../img/barralibre.jpg" />
-      <q-carousel-slide :name="2" img-src="../img/fiestapiscina.jpg" />
-      <q-carousel-slide :name="3" img-src="../img/fiestayate.jpg" />
-      <q-carousel-slide :name="4" img-src="../img/bañerapresidencial.jpg" />
+      <q-carousel-slide :name="1" img-src="../img/bañerapresidencial.jpg" />
+      <q-carousel-slide :name="2" img-src="../img/spapresidencial.jpg" />
+      <q-carousel-slide :name="3" img-src="../img/yatepresidencial.jpg" />
+      <q-carousel-slide :name="4" img-src="../img/piscinapresidencial.jpg" />
     </q-carousel>
   </div>
 

@@ -258,10 +258,10 @@
       thumbnails
       infinite
     >
-      <q-carousel-slide :name="1" img-src="../img/lagofamiliar.jpg" />
-      <q-carousel-slide :name="2" img-src="../img/bañostermales.jpg" />
-      <q-carousel-slide :name="3" img-src="../img/niñera.jpg" />
-      <q-carousel-slide :name="4" img-src="../img/animales.jpg" />
+      <q-carousel-slide :name="1" img-src="../img/bañerapresidencial.jpg" />
+      <q-carousel-slide :name="2" img-src="../img/spapresidencial.jpg" />
+      <q-carousel-slide :name="3" img-src="../img/yatepresidencial.jpg" />
+      <q-carousel-slide :name="4" img-src="../img/piscinapresidencial.jpg" />
     </q-carousel>
   </div>
 
@@ -294,7 +294,7 @@
             Beneficios
           </div>
           <div class="text-caption text-grey">
-            <b>Acceso a:</b> Lago recreacional, baños termales, granja y niñera.
+            <b>Acceso a:</b> Lago recreacional, baños termales y niñera.
           </div>
         </q-card-section>
 
@@ -316,10 +316,10 @@
       thumbnails
       infinite
     >
-      <q-carousel-slide :name="1" img-src="../img/barralibre.jpg" />
-      <q-carousel-slide :name="2" img-src="../img/fiestapiscina.jpg" />
-      <q-carousel-slide :name="3" img-src="../img/fiestayate.jpg" />
-      <q-carousel-slide :name="4" img-src="../img/bañerapresidencial.jpg" />
+      <q-carousel-slide :name="1" img-src="../img/bañerapresidencial.jpg" />
+      <q-carousel-slide :name="2" img-src="../img/spapresidencial.jpg" />
+      <q-carousel-slide :name="3" img-src="../img/yatepresidencial.jpg" />
+      <q-carousel-slide :name="4" img-src="../img/piscinapresidencial.jpg" />
     </q-carousel>
   </div>
 
@@ -336,7 +336,7 @@
 
           <div class="row no-wrap items-center">
             <div class="col text-h6 ellipsis">
-              Servicio para solteros
+              Habitaciones tipo Presidencial
             </div>
             <div class="col-auto text-grey text-caption q-pt-md row no-wrap items-center">
               <q-icon name="place"/>
@@ -352,7 +352,7 @@
             Beneficios
           </div>
           <div class="text-caption text-grey">
-            <b>Acceso a:</b> barra libre, piscina, baños de lujo y fiesta de yate.
+            Acceso viajes en yate, piscina personal, baños de lujo y tour spa.
           </div>
         </q-card-section>
 
@@ -364,7 +364,61 @@
 
 
 
-  
+    <q-dialog v-model="card">
+      <q-card class="my-card">
+        <div class="q-pa-md">
+    <q-carousel
+      swipeable
+      animated
+      v-model="slide"
+      thumbnails
+      infinite
+    >
+      <q-carousel-slide :name="1" img-src="../img/bañerapresidencial.jpg" />
+      <q-carousel-slide :name="2" img-src="../img/spapresidencial.jpg" />
+      <q-carousel-slide :name="3" img-src="../img/yatepresidencial.jpg" />
+      <q-carousel-slide :name="4" img-src="../img/piscinapresidencial.jpg" />
+    </q-carousel>
+  </div>
+
+        <q-card-section>
+          <q-btn
+            fab
+            color="primary"
+            icon="place"
+            class="absolute"
+            style="top: 0; right: 12px; transform: translateY(-50%);"
+            heigth="600px"
+            width = "400px"
+          />
+
+          <div class="row no-wrap items-center">
+            <div class="col text-h6 ellipsis">
+              Habitaciones tipo Presidencial
+            </div>
+            <div class="col-auto text-grey text-caption q-pt-md row no-wrap items-center">
+              <q-icon name="place"/>
+              
+            </div>
+          </div>
+
+          <q-rating v-model="stars" :max="5" size="32px" />
+        </q-card-section>
+
+        <q-card-section class="q-pt-none">
+          <div class="text-subtitle1">
+            Beneficios
+          </div>
+          <div class="text-caption text-grey">
+            Acceso viajes en yate, piscina personal, baños de lujo y tour spa.
+          </div>
+        </q-card-section>
+
+        <q-separator />
+
+       
+      </q-card>
+    </q-dialog>
   </div>
 </template>
 

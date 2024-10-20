@@ -3,9 +3,9 @@
   <q-layout view="lHr lpr fFf">
     <q-header reveal bordered class="bg-primary text-white" height-hint="98">
       <q-toolbar>
-        <q-toolbar-title>
+        <q-toolbar-title class="titulo">
           <q-avatar>
-            <img src="" />
+            <img src="./img/logo.jpg" />
           </q-avatar>
           DOLCHE & GAVANA RESORT
         </q-toolbar-title>
@@ -30,7 +30,7 @@
       <q-toolbar>
         <q-toolbar-title>
           
-          <div> 
+          <div class="logitobajo"> 
             <q-avatar>
             <img src="./img/logo.jpg" class="logo"/>
           </q-avatar></div>
@@ -56,3 +56,15 @@ export default {
   }
 }
 </script>
+<style>
+.titulo{
+
+  text-align: center;
+}
+.logitobajo{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+</style>
