@@ -416,10 +416,11 @@ export default {
 .tipoHabitacion{
   display: flex;
   width: 400px;
-  height: 50px;
+  height: 20px;
   align-items: center;
-  justify-content: center;
-  text-align: center;
+ 
+  
+  
 
 }
 .imghabitaciones{
@@ -434,6 +435,8 @@ export default {
   opacity: 0.9;
   background-color: rgba(0, 0, 0, 0.5);
   text-align: center;
+  width: 400px;
+  height: 500px;
 
 }
 .btninfo{
