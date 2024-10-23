@@ -564,7 +564,7 @@ export default {
   justify-content: center;
   align-items: center;
 }
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1640px) {
   .contenedorHabitaciones{
     height: 100vh;
     justify-content: center;
