@@ -68,7 +68,7 @@
     </div>
 </template>
 
-<style>
+<style scoped>
 p{
     text-align: center;
 }
@@ -78,12 +78,15 @@ p{
 
 .contenido {
     padding: 0%;
-    margin: 0%;
+    
     display: flex;
 
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    background-color: rgba(52, 198, 247, 0.5);
+    border-radius: 10px;
+    margin: 10px;
 }
 
 .contenido1 {
@@ -109,12 +112,12 @@ p{
 
 }
 
-.contenedorinicio {
+.contenedor_inicio {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    
+    background-image: url(../img/bienvenida.jpg);
     background-attachment: fixed;
     background-position: center;
     background-size: cover;

@@ -56,7 +56,7 @@ export default {
   }
 }
 </script>
-<style>
+<style scoped>
 .titulo{
 
   text-align: center;
@@ -67,4 +67,12 @@ export default {
   justify-content: center;
   
 }
+@media screen and (max-width: 600px) {
+  .q-route-tab{
+  
+  font-size: 20px;
+}
+
+}
+
 </style>

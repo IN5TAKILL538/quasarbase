@@ -39,28 +39,27 @@
         </form>
       </div>
       <div class="cardss">
-        <h2>Síguenos</h2>
-        
-        <img src="../img/redsocialbuena.png" alt="" class="imgredsocial">
+        <h3 class="txtredsocial">SIGUENOS</h3>
         <h3 class="txtredsocial">@OASI_DOLCHE_&_GAVANA</h3>
+        
+   
+        
         <div class="car"></div>
       </div>
    
 
-    <button class="pin-button" style="top: 10px; left: 10px"></button>
-    <button class="pin-button" style="top: 10px; right: 10px"></button>
-    <button class="pin-button" style="bottom: 10px; left: 10px"></button>
-
-    <button class="pin-button" style="bottom: 20%; right: 20%"></button>
+    
   </div>
 </template>
 
 <script>
 </script>
-<style scoped>
+<style>
 .txtredsocial{
     font-family: cursive;
     font-size: 25px;
+    padding: 10px;
+    font-weight: bold;
 }
 .imgredsocial{
     width: 200px;
@@ -125,18 +124,24 @@ contenedor_contactos {
   border: 2px solid #d4af37;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background-image: url("../img/redsocialbuena.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 .car {
   background-color: white;
-  background-image: url("https://img.pikbest.com/wp/202405/hotel-entrance-luxury-room-in-stunning-3d-rendering_9791225.jpg!w700wp");
+  background-image: url("https://st5.depositphotos.com/45522494/66791/i/450/depositphotos_667912936-stock-photo-aerial-view-aqua-park-large.jpg");
   background-size: cover;
+  background-position: center;
   border-radius: 15px;
-  position: relative;
+  
+ 
 
   width: 100%;
 
-  top: 100px;
-  height: 200px;
+  
+  height: 300px;
   text-align: center;
   border: 2px solid #d4af37;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);

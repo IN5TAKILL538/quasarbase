@@ -108,8 +108,11 @@ p {
 }
 
 .q-pa-md {
+    display: flex;
+    flex-direction: column;
     width: 360px;
     height: 360px;
+   
 }
 
 .contenedorinicio {
@@ -117,13 +120,16 @@ p {
 }
 
 .contenido {
+    background-color: rgba(20, 242, 135, 0.5);
+    border-radius: 10px;
     padding: 0%;
-    margin: 0%;
+    
     display: flex;
 
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    margin: 10px;
 }
 
 .contenido1 {
@@ -153,11 +159,12 @@ p {
 
 }
 
-.contenedorinicio {
+.contenedor_actividades {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    background-image: url(../img/lagofamiliar.jpg);
 
     background-attachment: fixed;
     background-position: center;

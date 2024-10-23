@@ -42,23 +42,27 @@
 
         <q-carousel-slide name="style" class="column no-wrap flex-center">
           <img src="../img/presidencial1.jpg" alt="" class="imghabitaciones" />
+          <button class="habitacionmount">$1200</button>
         </q-carousel-slide>
         <q-carousel-slide name="tv" class="column no-wrap flex-center">
           <img src="../img/presidencial2.jpg" alt="" class="imghabitaciones" />
+          <button class="habitacionmount">$1200</button>
         </q-carousel-slide>
         <q-carousel-slide name="layers" class="column no-wrap flex-center">
           <img src="../img/presidencial3.jpg" alt="" class="imghabitaciones" />
+          <button class="habitacionmount">$1500</button>
         </q-carousel-slide>
         <q-carousel-slide name="map" class="column no-wrap flex-center">
           <img src="../img/presidencial4.jpg" alt="" class="imghabitaciones" />
+          <button class="habitacionmount">$1600</button>
         </q-carousel-slide>
       </q-carousel>
-      <q-btn
+      <div class="divinfo"><q-btn
         class="btninfo"
         label="INFORMACION"
         color="primary"
         @click="card = true"
-      />
+      /></div>
     </div>
     <div class="q-pa-md">
       <h3 class="tipoHabitacion">LUNA DE MIEL</h3>
@@ -101,23 +105,27 @@
 
         <q-carousel-slide name="style" class="column no-wrap flex-center">
           <img src="../img/lunademiel1.jpg" alt="" class="imghabitaciones" />
+          <button class="habitacionmount">$1000</button>
         </q-carousel-slide>
         <q-carousel-slide name="tv" class="column no-wrap flex-center">
           <img src="../img/lunademiel2.jpg" alt="" class="imghabitaciones" />
+          <button class="habitacionmount">$1200</button>
         </q-carousel-slide>
         <q-carousel-slide name="layers" class="column no-wrap flex-center">
           <img src="../img/lunademiel3.jpg" alt="" class="imghabitaciones" />
+          <button class="habitacionmount">$1400</button>
         </q-carousel-slide>
         <q-carousel-slide name="map" class="column no-wrap flex-center">
           <img src="../img/lunademiel4.jpg" alt="" class="imghabitaciones" />
+          <button class="habitacionmount">$1000</button>
         </q-carousel-slide>
       </q-carousel>
-      <q-btn
+      <div class="divinfo"><q-btn
         class="btninfo"
         label="INFORMACION"
         color="primary"
-        @click="card2 = true"
-      />
+        @click="card = true"
+      /></div>
     </div>
     <div class="q-pa-md">
       <h3 class="tipoHabitacion">CABAÑA FAMILIAR</h3>
@@ -160,23 +168,27 @@
 
         <q-carousel-slide name="style" class="column no-wrap flex-center">
           <img src="../img/familiar1.jpg" alt="" class="imghabitaciones" />
+          <button class="habitacionmount">$2500</button>
         </q-carousel-slide>
         <q-carousel-slide name="tv" class="column no-wrap flex-center">
           <img src="../img/familiar2.jpg" alt="" class="imghabitaciones" />
+          <button class="habitacionmount">$1600</button>
         </q-carousel-slide>
         <q-carousel-slide name="layers" class="column no-wrap flex-center">
           <img src="../img/familiar3.jpg" alt="" class="imghabitaciones" />
+          <button class="habitacionmount">$2200</button>
         </q-carousel-slide>
         <q-carousel-slide name="map" class="column no-wrap flex-center">
           <img src="../img/familiar4.jpg" alt="" class="imghabitaciones" />
+          <button class="habitacionmount">$1800</button>
         </q-carousel-slide>
       </q-carousel>
-      <q-btn
+      <div class="divinfo"><q-btn
         class="btninfo"
         label="INFORMACION"
         color="primary"
-        @click="card3 = true"
-      />
+        @click="card = true"
+      /></div>
     </div>
     <div class="q-pa-md">
       <h3 class="tipoHabitacion">SUIT SOLTEROS</h3>
@@ -219,23 +231,27 @@
 
         <q-carousel-slide name="style" class="column no-wrap flex-center">
           <img src="../img/solteros1.jpg" alt="" class="imghabitaciones" />
+          <button class="habitacionmount">$1200</button>
         </q-carousel-slide>
         <q-carousel-slide name="tv" class="column no-wrap flex-center">
           <img src="../img/solteros2.jpg" alt="" class="imghabitaciones" />
+          <button class="habitacionmount">$1000</button>
         </q-carousel-slide>
         <q-carousel-slide name="layers" class="column no-wrap flex-center">
           <img src="../img/solteros3.jpg" alt="" class="imghabitaciones" />
+          <button class="habitacionmount">$1200</button>
         </q-carousel-slide>
         <q-carousel-slide name="map" class="column no-wrap flex-center">
           <img src="../img/solteros4.jpg" alt="" class="imghabitaciones" />
+          <button class="habitacionmount">$1100</button>
         </q-carousel-slide>
       </q-carousel>
-      <q-btn
+      <div class="divinfo"><q-btn
         class="btninfo"
         label="INFORMACION"
         color="primary"
-        @click="card4 = true"
-      />
+        @click="card = true"
+      /></div>
     </div>
     <q-dialog v-model="card">
       <q-card class="my-card">
@@ -480,42 +496,88 @@ export default {
   },
 };
 </script>
-<style scoped>
+<style>
+.habitacionmount {
+    background-color: #007BFF; /* Color de fondo */
+    color: white; /* Color del texto */
+    padding: 10px 20px; /* Espaciado interno */
+    
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cambiar cursor al pasar el mouse */
+    transition: background-color 0.3s, transform 0.1s; /* Transiciones suaves */
+    margin: 10px;
+}
+
+/* Efecto al pasar el mouse */
+.habitacionmount:hover {
+    background-color: #0056b3; /* Color de fondo al pasar el mouse */
+}
+
+/* Efecto al hacer clic */
+.habitacionmount:active {
+    transform: scale(0.8); /* Efecto de reducción */
+}
 .contenedorHabitaciones {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  background-image: url(./img/fachada.jpg);
+  background-image: url(../img/fachada.jpg);
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
   padding: 0%;
   margin: 0%;
+
 }
 .tipoHabitacion {
   display: flex;
   width: 400px;
   height: 20px;
   align-items: center;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 30px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+   color: rgb(129, 207, 11); /* Color oscuro */
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.5); /* Sombra clara */
 }
 .imghabitaciones {
   opacity: 1;
   display: block;
   width: 300px;
   height: 200px;
+  padding-top: 10px;
 }
 
 .q-pa-md {
-  opacity: 0.9;
+  opacity: 0.8;
   background-color: rgba(0, 0, 0, 0.5);
   text-align: center;
   width: 400px;
   height: 500px;
+  margin: 5px;
 }
 .btninfo {
   display: block;
   justify-content: center;
   align-items: center;
 }
+@media screen and (max-width: 820px) {
+  
+}
+.q-btn{
+  display: block;
+  width: 200px;
+  height: 20px;
+  margin: 5px;
+}
+.divinfo{
+display: flex;
+justify-content: center;
+align-items: center;
+text-align: center;
+}
+
 </style>
