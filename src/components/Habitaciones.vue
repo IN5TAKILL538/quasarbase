@@ -576,12 +576,16 @@ export default {
   width: 200px;
   height: 20px;
   margin: 5px;
+
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  background: linear-gradient(to right, rgba(253, 254, 254, 0.5), rgba(5, 5, 5, 0.5));
 }
 .divinfo{
 display: flex;
 justify-content: center;
 align-items: center;
 text-align: center;
+
 }
 
 </style>

@@ -106,7 +106,9 @@ p {
   align-items: center;
   text-align: center;
   background-image: url(../img/menu4.jpg);
+
 }
+
 
 .contenido {
   background-color: rgba(192, 231, 245, 0.5);
