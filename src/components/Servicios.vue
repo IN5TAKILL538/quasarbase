@@ -58,7 +58,7 @@
 
     <div class="contenido">
       <div class="contenido1">
-        <h2>Alquiler de Yate / tripulacion incluida</h2>
+        <h2>Alquiler de Yate con tripulacion</h2>
         <p>Disfruta de cenas, fiestas o viajes en el mar.</p>
         <p class="precio"><b>4000$ X dia</b></p>
       </div>
