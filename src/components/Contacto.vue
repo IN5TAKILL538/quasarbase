@@ -14,7 +14,7 @@
     </div>
     
       <div class="cards">
-        <h2>Contáctanos</h2>
+        <h2 class="txtredsocial">Contáctanos</h2>
         <form>
           <div class="form-group">
             <label for="name">Nombre:</label>
@@ -40,7 +40,7 @@
       </div>
       <div class="cardss">
         <h3 class="txtredsocial">SIGUENOS</h3>
-        <h3 class="txtredsocial">@OASI_DOLCHE_&_GAVANA</h3>
+        <h3 class="txtredsocial">@OASIS_DOLCHE_&_GAVANA</h3>
         
    
         
@@ -60,6 +60,8 @@
     font-size: 25px;
     padding: 10px;
     font-weight: bold;
+    color: rgb(236, 36, 36); /* Color oscuro */
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.5); /* Sombra clara */
 }
 .imgredsocial{
     width: 200px;
@@ -186,8 +188,8 @@ contenedor_contactos {
   border-radius: 10px;
 }
 .form-group {
-  margin-bottom: 15px;
-  opacity: 0.8;
+  margin-bottom: 25px;
+  
 }
 .form-group label {
   display: block;

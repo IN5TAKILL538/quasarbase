@@ -552,7 +552,7 @@ export default {
 }
 
 .q-pa-md {
-  opacity: 0.8;
+  opacity: 0.9;
   background-color: rgba(0, 0, 0, 0.5);
   text-align: center;
   width: 400px;
