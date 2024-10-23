@@ -564,8 +564,12 @@ export default {
   justify-content: center;
   align-items: center;
 }
-@media screen and (max-width: 820px) {
-  
+@media screen and (min-width: 1600px) {
+  .contenedorHabitaciones{
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+  }
 }
 .q-btn{
   display: block;

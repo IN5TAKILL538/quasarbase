@@ -1,7 +1,7 @@
 <template>
   <div class="contenedor_contactos">
     <div class="contenedor_mapa">
-      <h2>Donde nos encontramos</h2>
+      <h2 class="tipoHabitacion">DONDE ENCONTRARNOS</h2>
       <iframe
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d25443.448611382533!2d-8.61171795309071!3d37.14244817738387!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd1b2f15e2fe62b7%3A0xa107f15c0517a5c!2sAlvor%2C%20Portugal!5e0!3m2!1ses!2sco!4v1729521470492!5m2!1ses!2sco"
         width="600"
@@ -74,6 +74,20 @@ contenedor_contactos {
   text-align: center;
   margin: 0%;
   padding: 0%;
+  
+}
+.tipoHabitacion {
+  display: flex;
+  width: 400px;
+  height: 20px;
+  align-items: center;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 30px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+   color: rgb(129, 207, 11); /* Color oscuro */
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.5); /* Sombra clara */
 }
 .contenedor_mapa {
   display: flex;
@@ -92,6 +106,7 @@ contenedor_contactos {
 }
 
 .container {
+  
   max-width: 1200px;
   margin: 0 auto;
   background-color: rgba(255, 255, 255, 0.9);
@@ -113,6 +128,10 @@ contenedor_contactos {
   border: 2px solid #d4af37;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background-image: url(../img/camino.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
   
 }
 .cardss {
@@ -168,6 +187,7 @@ contenedor_contactos {
 }
 .form-group {
   margin-bottom: 15px;
+  opacity: 0.8;
 }
 .form-group label {
   display: block;
